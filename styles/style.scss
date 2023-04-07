@@ -1,14 +1,87 @@
 body
 {
     background-color: #f5f5f5;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     .container
     {
         background-color: #E9E9E9;
         margin: auto;
         width: 600px;
+        box-shadow: 1px 3px 8px 1px rgba(0,0,0,0.2);
+        border-radius: 5px;
+        overflow: hidden;
+
     }
     .header
     {
-        padding: 20px;
+        padding: 40px;
+        .title
+        {
+            color: #006F6F;
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        .subtitle
+        {
+            color: #009E9E;
+            font-size: 18px;
+            font-weight: 500;
+            margin-bottom: 15px;
+        }
+
+    }
+    .flex-container
+    {
+        display:flex;
+        flex-direction: row; // vem como padrao, mas da p mudar como column
+        color:#E9E9E9;
+
+        .container-subscription
+        {
+            width: 50%;
+            background-color: #006a6a;
+            padding: 20px;
+
+            .subscription-title
+            {
+            
+                display: flex;
+                justify-content: center;
+            }
+            .subscription-price
+            {
+                padding: 20px;
+
+                font-size: 32px;
+                font-weight: 700;
+            }
+            .button
+            {
+                
+                width: 100%;
+                padding: 15px 32px;
+                color: #006a6a;
+                cursor: pointer;
+                :hover
+                {
+                    color: #E9E9E9;
+                }
+            }
+            
+        }
+        .container-community
+        {
+            width: 50%;
+            background-color: #009E9E;
+            padding: 20px;
+            .image-group
+            {
+                display: flex;
+                justify-content: center;
+                
+            }
+
+        }
     }
 }
